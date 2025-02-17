@@ -1,1 +1,1 @@
-# transportation-inqeuality-hk
+# transportation-inequality-hk
