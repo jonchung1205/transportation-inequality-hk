@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1ac8f4ebfb4a914a20bfefcfaa6660ec {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1ac8f4ebfb4a914a20bfefcfaa6660ec" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1ac8f4ebfb4a914a20bfefcfaa6660ec = L.map(
+                "map_1ac8f4ebfb4a914a20bfefcfaa6660ec",
+                {
+                    center: [22.3193, 114.1694],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4164172e6331e06ce6a9cc792b4dbefa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4164172e6331e06ce6a9cc792b4dbefa.addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+            var circle_marker_594c6854efaf7012d4f403b68cd48a21 = L.circleMarker(
+                [22.263238581952084, 114.15292051565376],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_2e0b65d27cba0a1fc461b116903fa988 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e356a49ef6634fa0d49fbedda7ec0ea = $(`<div id="html_2e356a49ef6634fa0d49fbedda7ec0ea" style="width: 100.0%; height: 100.0%;">Central & Western</div>`)[0];
+                popup_2e0b65d27cba0a1fc461b116903fa988.setContent(html_2e356a49ef6634fa0d49fbedda7ec0ea);
+            
+        
+
+        circle_marker_594c6854efaf7012d4f403b68cd48a21.bindPopup(popup_2e0b65d27cba0a1fc461b116903fa988)
+        ;
+
+        
+    
+    
+            var circle_marker_79eb5930a36d173ef0974418b3638039 = L.circleMarker(
+                [22.266548742774543, 114.1786101878612],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_733e4abe56154092ffb07c3db8bca6e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d88fad6d61273c82d5c659e8079fa166 = $(`<div id="html_d88fad6d61273c82d5c659e8079fa166" style="width: 100.0%; height: 100.0%;">Wan Chai</div>`)[0];
+                popup_733e4abe56154092ffb07c3db8bca6e5.setContent(html_d88fad6d61273c82d5c659e8079fa166);
+            
+        
+
+        circle_marker_79eb5930a36d173ef0974418b3638039.bindPopup(popup_733e4abe56154092ffb07c3db8bca6e5)
+        ;
+
+        
+    
+    
+            var circle_marker_620c0bb0b30c2aa600a9b474511f0427 = L.circleMarker(
+                [22.263410975254743, 114.21514842794755],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_d1642f99e38db09439bb3a4c23c4e333 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9b3bc2a0de0229a411ba8e51b419666 = $(`<div id="html_b9b3bc2a0de0229a411ba8e51b419666" style="width: 100.0%; height: 100.0%;">Eastern</div>`)[0];
+                popup_d1642f99e38db09439bb3a4c23c4e333.setContent(html_b9b3bc2a0de0229a411ba8e51b419666);
+            
+        
+
+        circle_marker_620c0bb0b30c2aa600a9b474511f0427.bindPopup(popup_d1642f99e38db09439bb3a4c23c4e333)
+        ;
+
+        
+    
+    
+            var circle_marker_bad9a2de221ace8292f5d729ecd737ba = L.circleMarker(
+                [22.257311626452164, 114.18792991063452],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_763b0f4414bc945fa4dbd9c43c9267f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bfd4f6dc6406a755d4762ab01eb88dd = $(`<div id="html_5bfd4f6dc6406a755d4762ab01eb88dd" style="width: 100.0%; height: 100.0%;">Southern</div>`)[0];
+                popup_763b0f4414bc945fa4dbd9c43c9267f3.setContent(html_5bfd4f6dc6406a755d4762ab01eb88dd);
+            
+        
+
+        circle_marker_bad9a2de221ace8292f5d729ecd737ba.bindPopup(popup_763b0f4414bc945fa4dbd9c43c9267f3)
+        ;
+
+        
+    
+    
+            var circle_marker_316592ba8f3f158793625f089c08c46f = L.circleMarker(
+                [22.314723099999988, 114.17124120000004],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_96e8fa15f0d4c186fb237a2624d3890d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_567853c39615c1995020611b175fb611 = $(`<div id="html_567853c39615c1995020611b175fb611" style="width: 100.0%; height: 100.0%;">Yau Tsim Mong</div>`)[0];
+                popup_96e8fa15f0d4c186fb237a2624d3890d.setContent(html_567853c39615c1995020611b175fb611);
+            
+        
+
+        circle_marker_316592ba8f3f158793625f089c08c46f.bindPopup(popup_96e8fa15f0d4c186fb237a2624d3890d)
+        ;
+
+        
+    
+    
+            var circle_marker_28b330192a7419deb823bf99bab9dbd8 = L.circleMarker(
+                [22.338325572519075, 114.15309959287534],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_0b556b3785a69395a39e7075aaf638d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e6eeb4ec6672f8330c01b2dc0a8bf2f = $(`<div id="html_2e6eeb4ec6672f8330c01b2dc0a8bf2f" style="width: 100.0%; height: 100.0%;">Sham Shui Po</div>`)[0];
+                popup_0b556b3785a69395a39e7075aaf638d3.setContent(html_2e6eeb4ec6672f8330c01b2dc0a8bf2f);
+            
+        
+
+        circle_marker_28b330192a7419deb823bf99bab9dbd8.bindPopup(popup_0b556b3785a69395a39e7075aaf638d3)
+        ;
+
+        
+    
+    
+            var circle_marker_a7899ee5cc28703ee7500c3478111b2f = L.circleMarker(
+                [22.32986162576687, 114.1886102760736],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_484bf51d7f3a02871f1a51b52c386f79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0802b13a05d346f61115afb794543c45 = $(`<div id="html_0802b13a05d346f61115afb794543c45" style="width: 100.0%; height: 100.0%;">Kowloon City</div>`)[0];
+                popup_484bf51d7f3a02871f1a51b52c386f79.setContent(html_0802b13a05d346f61115afb794543c45);
+            
+        
+
+        circle_marker_a7899ee5cc28703ee7500c3478111b2f.bindPopup(popup_484bf51d7f3a02871f1a51b52c386f79)
+        ;
+
+        
+    
+    
+            var circle_marker_4b4f222e828d6abd1766462ade7b405e = L.circleMarker(
+                [22.34950846153844, 114.2012202447552],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_adba265f5f2a1a8cc37ccac482947fec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f2b85aae62d5047fab79abb8ba79a38 = $(`<div id="html_2f2b85aae62d5047fab79abb8ba79a38" style="width: 100.0%; height: 100.0%;">Wong Tai Sin</div>`)[0];
+                popup_adba265f5f2a1a8cc37ccac482947fec.setContent(html_2f2b85aae62d5047fab79abb8ba79a38);
+            
+        
+
+        circle_marker_4b4f222e828d6abd1766462ade7b405e.bindPopup(popup_adba265f5f2a1a8cc37ccac482947fec)
+        ;
+
+        
+    
+    
+            var circle_marker_2ebdc5e410d1791404e93750b66edb1b = L.circleMarker(
+                [22.313950115532748, 114.23487566110394],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_13ee5128c595c953827df180c7b370e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1e646f958359387d020dd8f2ad3f37f = $(`<div id="html_e1e646f958359387d020dd8f2ad3f37f" style="width: 100.0%; height: 100.0%;">Kwun Tong</div>`)[0];
+                popup_13ee5128c595c953827df180c7b370e2.setContent(html_e1e646f958359387d020dd8f2ad3f37f);
+            
+        
+
+        circle_marker_2ebdc5e410d1791404e93750b66edb1b.bindPopup(popup_13ee5128c595c953827df180c7b370e2)
+        ;
+
+        
+    
+    
+            var circle_marker_cbe7cae4f9a98beb95f8393fb84ea405 = L.circleMarker(
+                [22.39235871660856, 114.1075138385597],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_5bdfa6bd1fc4492f2085a9edc31ba4b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2292a2410ef4983a49f27587e59a953d = $(`<div id="html_2292a2410ef4983a49f27587e59a953d" style="width: 100.0%; height: 100.0%;">Tsuen Wan</div>`)[0];
+                popup_5bdfa6bd1fc4492f2085a9edc31ba4b8.setContent(html_2292a2410ef4983a49f27587e59a953d);
+            
+        
+
+        circle_marker_cbe7cae4f9a98beb95f8393fb84ea405.bindPopup(popup_5bdfa6bd1fc4492f2085a9edc31ba4b8)
+        ;
+
+        
+    
+    
+            var circle_marker_6592321be5ec2ff38345d54c43d7d8e1 = L.circleMarker(
+                [22.401753667117717, 114.00729119079844],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_b7233e5919403e9bcd7f9cb2b7063312 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fbe4b92fb3aa05c090a699e844b05b0e = $(`<div id="html_fbe4b92fb3aa05c090a699e844b05b0e" style="width: 100.0%; height: 100.0%;">Tuen Mun</div>`)[0];
+                popup_b7233e5919403e9bcd7f9cb2b7063312.setContent(html_fbe4b92fb3aa05c090a699e844b05b0e);
+            
+        
+
+        circle_marker_6592321be5ec2ff38345d54c43d7d8e1.bindPopup(popup_b7233e5919403e9bcd7f9cb2b7063312)
+        ;
+
+        
+    
+    
+            var circle_marker_1bee0adebf506470c9d43f79789ced72 = L.circleMarker(
+                [22.4436339571263, 114.0706477346466],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_7f192ef9294dc79e567ecdfc0eb411b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bba1f40c1b89cb2e4de1ad655ea4e073 = $(`<div id="html_bba1f40c1b89cb2e4de1ad655ea4e073" style="width: 100.0%; height: 100.0%;">Yuen Long</div>`)[0];
+                popup_7f192ef9294dc79e567ecdfc0eb411b8.setContent(html_bba1f40c1b89cb2e4de1ad655ea4e073);
+            
+        
+
+        circle_marker_1bee0adebf506470c9d43f79789ced72.bindPopup(popup_7f192ef9294dc79e567ecdfc0eb411b8)
+        ;
+
+        
+    
+    
+            var circle_marker_7c2f9bde30626e2242e9b2b09f0dc30d = L.circleMarker(
+                [22.51351133575646, 114.17009458882336],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_9dd3050dd8c5e6e0e06172f3a2f23a42 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51ad8c4db5c30717c33a7649984de9a3 = $(`<div id="html_51ad8c4db5c30717c33a7649984de9a3" style="width: 100.0%; height: 100.0%;">North</div>`)[0];
+                popup_9dd3050dd8c5e6e0e06172f3a2f23a42.setContent(html_51ad8c4db5c30717c33a7649984de9a3);
+            
+        
+
+        circle_marker_7c2f9bde30626e2242e9b2b09f0dc30d.bindPopup(popup_9dd3050dd8c5e6e0e06172f3a2f23a42)
+        ;
+
+        
+    
+    
+            var circle_marker_e0a8c40d0a361dd672c1d8c6e953785f = L.circleMarker(
+                [22.44956301415098, 114.22615542452836],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_1e48425958b3c4118707bb141e70b326 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb74f43b827e47d59e3eeac1d5d63a2a = $(`<div id="html_eb74f43b827e47d59e3eeac1d5d63a2a" style="width: 100.0%; height: 100.0%;">Tai Po</div>`)[0];
+                popup_1e48425958b3c4118707bb141e70b326.setContent(html_eb74f43b827e47d59e3eeac1d5d63a2a);
+            
+        
+
+        circle_marker_e0a8c40d0a361dd672c1d8c6e953785f.bindPopup(popup_1e48425958b3c4118707bb141e70b326)
+        ;
+
+        
+    
+    
+            var circle_marker_51d6c9a6de5d7e1f020f014360259224 = L.circleMarker(
+                [22.35661799123446, 114.26758673484296],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_7c3a8b0777d689509d9a60e774846694 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45b1003af9e3fbeb135355247b4f90a9 = $(`<div id="html_45b1003af9e3fbeb135355247b4f90a9" style="width: 100.0%; height: 100.0%;">Sai Kung</div>`)[0];
+                popup_7c3a8b0777d689509d9a60e774846694.setContent(html_45b1003af9e3fbeb135355247b4f90a9);
+            
+        
+
+        circle_marker_51d6c9a6de5d7e1f020f014360259224.bindPopup(popup_7c3a8b0777d689509d9a60e774846694)
+        ;
+
+        
+    
+    
+            var circle_marker_b59c31d4bab9a1e1487e6766aa9b9e8d = L.circleMarker(
+                [22.37798757869253, 114.1931882748184],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_f4118418843b3dbd6aa3e3ca304a57f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a85650d4ba7fa49ba10adac57f74cb55 = $(`<div id="html_a85650d4ba7fa49ba10adac57f74cb55" style="width: 100.0%; height: 100.0%;">Sha Tin</div>`)[0];
+                popup_f4118418843b3dbd6aa3e3ca304a57f6.setContent(html_a85650d4ba7fa49ba10adac57f74cb55);
+            
+        
+
+        circle_marker_b59c31d4bab9a1e1487e6766aa9b9e8d.bindPopup(popup_f4118418843b3dbd6aa3e3ca304a57f6)
+        ;
+
+        
+    
+    
+            var circle_marker_b411ad405198e78afe64c300c9520f84 = L.circleMarker(
+                [22.36065973186121, 114.1401925394322],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_f40e3861bdde8c17889f050b4078fba8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee43a197524fb87737fef3ce6677575e = $(`<div id="html_ee43a197524fb87737fef3ce6677575e" style="width: 100.0%; height: 100.0%;">Kwai Tsing</div>`)[0];
+                popup_f40e3861bdde8c17889f050b4078fba8.setContent(html_ee43a197524fb87737fef3ce6677575e);
+            
+        
+
+        circle_marker_b411ad405198e78afe64c300c9520f84.bindPopup(popup_f40e3861bdde8c17889f050b4078fba8)
+        ;
+
+        
+    
+    
+            var circle_marker_e8c170a41fcb1c92243ad4c8ed33b0e6 = L.circleMarker(
+                [22.28291868852459, 114.02142049180326],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1ac8f4ebfb4a914a20bfefcfaa6660ec);
+        
+    
+        var popup_cc159426ec3b7839cf7539b41a67a4c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0dc8aacf3125b1b46b5772e989f8e47c = $(`<div id="html_0dc8aacf3125b1b46b5772e989f8e47c" style="width: 100.0%; height: 100.0%;">Islands</div>`)[0];
+                popup_cc159426ec3b7839cf7539b41a67a4c1.setContent(html_0dc8aacf3125b1b46b5772e989f8e47c);
+            
+        
+
+        circle_marker_e8c170a41fcb1c92243ad4c8ed33b0e6.bindPopup(popup_cc159426ec3b7839cf7539b41a67a4c1)
+        ;
+
+        
+    
+</script>
+</html>
